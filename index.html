@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HQ Backups is a personal macOS app that automatically sends verified SQLite snapshots from a local HQ workspace to the owner's Google Drive.">
+  <meta name="color-scheme" content="light">
+  <title>HQ Backups · Verified backups to Google Drive</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="top">
+    <div class="frame top-row">
+      <a class="brand" href="./"><span class="mark" aria-hidden="true">HQ</span> HQ Backups</a>
+      <nav aria-label="Site"><a href="privacy.html">Privacy Policy</a></nav>
+    </div>
+  </header>
+  <main class="frame home" id="main">
+    <section class="intro" aria-labelledby="title">
+      <p class="eyebrow">Personal macOS desktop app</p>
+      <h1 id="title">HQ Backups</h1>
+      <p class="lede">Automatic, verified backups from a private local HQ database to the owner’s Google Drive.</p>
+      <p>After Google sign-in and approval of the first real upload, the app takes a dated SQLite snapshot each day while the Mac is awake, signed in, and online. It downloads the uploaded file again and verifies its checksum and database integrity.</p>
+    </section>
+    <section class="details" aria-labelledby="access">
+      <h2 id="access">Google Drive access</h2>
+      <p>HQ Backups uses Google OAuth with the <code>drive.file</code> scope to create and manage its backup files in a private folder named <strong>HQ Backups</strong>. It uses this access to upload, verify, and retire dated backups.</p>
+      <p>Files are sent over HTTPS as ordinary SQLite snapshots. HQ Backups applies no additional file encryption before upload.</p>
+      <a class="policy-link" href="privacy.html">Read the Privacy Policy <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="bottom"><div class="frame bottom-row"><span>HQ Backups</span><a href="privacy.html">Privacy Policy</a></div></footer>
+</body>
+</html>
